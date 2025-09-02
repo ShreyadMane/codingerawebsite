@@ -1,0 +1,266 @@
+.about-image {
+    margin-right: 61.5px;
+
+    img {
+        margin-bottom: -4px;
+    }
+    .clutch-badge {
+        bottom: 141px;
+        right: -61.5px;
+        position: absolute;
+    }
+}
+.agile-steps {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .step {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 150px;
+  }
+  .arrow {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .step h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .step p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+  }
+.about-content {
+    margin-left: -35px;
+
+    .sub-title {
+        padding: 5px 15px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        color: var(--bodyColor);
+        background-color: rgba(255, 255, 255, .03);
+        border: 1px solid rgba(255, 255, 255, .09);
+    }
+    h2 {
+        margin-bottom: 25px;
+        line-height: 1.2;
+        font-size: 59px;
+
+        span {
+            color: #7b8f94;
+        }
+    }
+    .text {
+        padding-left: 150px;
+        margin-top: 35px;
+        
+        p {
+            font-size: 18px;
+        }
+        .funfacts {
+            margin-top: 70px;
+
+            .box {
+                .number {
+                    margin-bottom: 12px;
+                    background: linear-gradient(93deg, #400D64 0%, #7B13FF 20.48%, #FF82F3 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font: {
+                        size: 70px;
+                        weight: 500;
+                        family: var(--headingFontFamily);
+                    };
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .about-image {
+        margin-right: 0;
+    
+        .clutch-badge {
+            max-width: 80px;
+            bottom: auto;
+            top: 10px;
+            right: 0;
+        }
+    }
+    .about-content {
+        margin: {
+            left: 0;
+            top: 25px;
+        };
+        .sub-title {
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-bottom: 13px;
+            line-height: 1.3;
+            font-size: 28px;
+        }
+        .text {
+            padding-left: 0;
+            margin-top: 13px;
+            
+            p {
+                font-size: 15px;
+            }
+            .funfacts {
+                margin-top: 17px;
+    
+                .box {
+                    .number {
+                        margin-bottom: 8px;
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .about-image {
+        margin-right: 60px;
+    
+        .clutch-badge {
+            right: -60px;
+        }
+    }
+    .about-content {
+        margin: {
+            left: 0;
+            top: 25px;
+        };
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h2 {
+            margin-bottom: 15px;
+            font-size: 42px;
+        }
+        .text {
+            padding-left: 0;
+            margin-top: 15px;
+            
+            p {
+                font-size: 15px;
+            }
+            .funfacts {
+                margin-top: 27px;
+    
+                .box {
+                    .number {
+                        margin-bottom: 10px;
+                        font-size: 42px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .about-image {
+        margin-right: 50px;
+    
+        .clutch-badge {
+            top: 25px;
+            bottom: auto;
+            right: -15px;
+            max-width: 100px;
+        }
+    }
+    .about-content {
+        h2 {
+            margin-bottom: 15px;
+            font-size: 46px;
+        }
+        .text {
+            padding-left: 0;
+            margin-top: 15px;
+            
+            p {
+                font-size: 16px;
+            }
+            .funfacts {
+                margin-top: 30px;
+    
+                .box {
+                    .number {
+                        font-size: 50px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .about-content {
+        h2 {
+            font-size: 55px;
+        }
+        .text {
+            padding-left: 70px;
+            margin-top: 30px;
+            
+            p {
+                font-size: 17px;
+            }
+            .funfacts {
+                margin-top: 25px;
+    
+                .box {
+                    .number {
+                        font-size: 60px;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

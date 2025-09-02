@@ -1,0 +1,464 @@
+<div class="what-we-provide-area ptb-150 customecolore">
+    <div class="container">
+        <div class="section-title">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <span class="sub-title style-two fw-medium d-inline-block">
+                        What We Provide
+                    </span>
+                    <h2>
+                        <span>Empowering Your Digital Journey</span> with Creative Excellence.
+                    </h2>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <p>
+                        Using our AI solutions, it becomes possible to perform even those operations efficiently,
+                        rapidly, and precisely that previously could not have been performed at all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div class="what-we-provide-tabs">
+                    <div class="tabs-list pl-0 mt-0 mb-0 list-unstyled">
+                        <li [ngClass]="{'active': currentTab === 'tab1'}">
+                            <div (click)="switchTab($event, 'tab1')">
+                                Web Development
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab2'}">
+                            <div (click)="switchTab($event, 'tab2')">
+                                Mobile Application Development
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab3'}">
+                            <div (click)="switchTab($event, 'tab3')">
+                                Software Development Solutions
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab4'}">
+                            <div (click)="switchTab($event, 'tab4')">
+                                Technical Support
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab5'}">
+                            <div (click)="switchTab($event, 'tab5')">
+                                Trainings & Internship Programs
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': currentTab === 'tab6'}">
+                            <div (click)="switchTab($event, 'tab6')">
+                                Blockchain Development
+                            </div>
+                        </li>
+                    </div>
+                    <div class="btn-box">
+                        <a routerLink="/services" mat-flat-button color="primary" class="default-btn">
+                            View More Services <i class="flaticon-right-arrow-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab1'">
+                    <div class="row card-container">
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>120+</h3>
+                                <p class="happy"> Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>15+</h3>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>400+</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>10+</h3>
+                                <p class="happy">Technologies Used</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="card-container">
+                        <div class="card">
+                          <h3>120+</h3>
+                          <p>Happy Customers</p>
+                        </div>
+                        <div class="card">
+                          <h3>15+</h3>
+                          <p>Team Members</p>
+                        </div>
+                        <div class="card">
+                          <h3>500+</h3>
+                          <p>Cups of Coffee</p>
+                        </div>
+                        <div class="card">
+                          <h3>10+</h3>
+                          <p>Technologies Used</p>
+                        </div>
+                      </div> -->
+                    <img  src="assets/images/what-we-provide/what-we-proviede1..png" alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab2'">
+                    <!-- <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Development Services
+
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- <div class="card-container">
+                        <div class="card">
+                          <h3>70+</h3>
+                          <p>Happy Customers</p>
+                        </div>
+                        <div class="card">
+                          <h3>25+</h3>
+                          <p>Team Members</p>
+                        </div>
+                        <div class="card">
+                          <h3>500+</h3>
+                          <p>Cups of Coffee</p>
+                        </div>
+                        <div class="card">
+                          <h3>15+</h3>
+                          <p>Technologies Used</p>
+                        </div>
+                      </div> -->
+                    <div class="row card-container">
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>90+</h3>
+                                <p class="happy">Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>15+</h3>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>600+</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>10+</h3>
+                                <p class="happy">Technologies Used</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img  src="assets/images/what-we-provide/what-we-provide2.jpg"
+                        alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab3'">
+                    <!-- <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Development Services
+
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- <div class="card-container">
+                        <div class="card">
+                          <h3>70+</h3>
+                          <p>Happy Customers</p>
+                        </div>
+                        <div class="card">
+                          <h3>25+</h3>
+                          <p>Team Members</p>
+                        </div>
+                        <div class="card">
+                          <h3>500+</h3>
+                          <p>Cups of Coffee</p>
+                        </div>
+                        <div class="card">
+                          <h3>15+</h3>
+                          <p>Technologies Used</p>
+                        </div>
+                      </div> -->
+                    <div class="row card-container">
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>100+</h3>
+                                <p class="happy">Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>15+</h3>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>600+</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>10+</h3>
+                                <p class="happy">Technologies Used</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img  src="assets/images/what-we-provide/what-we-provide3.jpg"
+                        alt="what-we-provide-image">
+                </div>
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab4'">
+                    <!-- <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Development Services
+
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- <div class="card-container">
+                        <div class="card">
+                          <h3>70+</h3>
+                          <p>Happy Customers</p>
+                        </div>
+                        <div class="card">
+                          <h3>25+</h3>
+                          <p>Team Members</p>
+                        </div>
+                        <div class="card">
+                          <h3>500+</h3>
+                          <p>Cups of Coffee</p>
+                        </div>
+                        <div class="card">
+                          <h3>15+</h3>
+                          <p>Technologies Used</p>
+                        </div>
+                      </div> -->
+                    <div class="row card-container">
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>1200+</h3>
+                                <p class="happy">Happy Students</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>15+</h3>
+                                <p>Trainers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>1200+</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>20+</h3>
+                                <p class="happy">Technologies Used</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img  src="assets/images/what-we-provide/techicalsupoort.png"
+                        alt="what-we-provide-image">
+                </div>
+
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab5'">
+                    <!-- <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Development Services
+
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- <div class="card-container">
+                        <div class="card">
+                          <h3>70+</h3>
+                          <p>Happy Customers</p>
+                        </div>
+                        <div class="card">
+                          <h3>25+</h3>
+                          <p>Team Members</p>
+                        </div>
+                        <div class="card">
+                          <h3>500+</h3>
+                          <p>Cups of Coffee</p>
+                        </div>
+                        <div class="card">
+                          <h3>15+</h3>
+                          <p>Technologies Used</p>
+                        </div>
+                      </div> -->
+                    <div class="row card-container">
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>55+</h3>
+                                <p class="happy">Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>15+</h3>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>600+</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>15+</h3>
+                                <p class="happy">Technologies Used</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img  src="assets/images/what-we-provide/Trainings & Internship Programs.png"
+                        alt="what-we-provide-image">
+                </div>
+             
+                <div class="what-we-provide-content position-relative z-1" *ngIf="currentTab === 'tab6'">
+                    <!-- <ul class="list mb-0 mt-0 list-unstyled">
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Development Services
+
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Analysis
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/service-details" class="d-block position-relative fw-medium">
+                                Web Application Visualization
+                                <i class="flaticon-right-arrow-2"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!-- <div class="card-container">
+                        <div class="card">
+                          <h3>70+</h3>
+                          <p>Happy Customers</p>
+                        </div>
+                        <div class="card">
+                          <h3>25+</h3>
+                          <p>Team Members</p>
+                        </div>
+                        <div class="card">
+                          <h3>500+</h3>
+                          <p>Cups of Coffee</p>
+                        </div>
+                        <div class="card">
+                          <h3>15+</h3>
+                          <p>Technologies Used</p>
+                        </div>
+                      </div> -->
+                    <div class="row card-container">
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>5+</h3>
+                                <p class="happy">Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>6+</h3>
+                                <p>Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>100+</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 mb-2">
+                            <div class="card">
+                                <h3>10+</h3>
+                                <p class="happy">Technologies Used</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img  src="assets/images/what-we-provide/what-we-provide1.jpg"
+                        alt="what-we-provide-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

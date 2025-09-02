@@ -1,0 +1,119 @@
+<div class="contact-area pb-150 customecolore">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-image">
+                    <img src="assets/images/contact-us/contact2.jpg" alt="contact-image">
+                    <ul class="pl-0 mb-0 list-unstyled">
+                        <li class="position-relative">
+                            <i class="flaticon-check-mark-1"></i>
+                            Always support from our expert members when needed
+                        </li>
+                        <li class="position-relative">
+                            <i class="flaticon-check-mark-1"></i>
+                            Instant pricing & lead-time options for our customer
+                        </li>
+                        <li class="position-relative">
+                            <i class="flaticon-check-mark-1"></i>
+                            Support from our technical manufacturing experts member
+                        </li>
+                        <li class="position-relative">
+                            <i class="flaticon-check-mark-1"></i>
+                            Support to join 1K+ companies who codingera software
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-content">
+                    <span class="sub-title fw-medium d-inline-block">
+                        Contact With Us
+                    </span>
+                    <h2 class="mb-0">
+                        <!-- <span>Join 23K+</span> -->
+                         Drop us Message for any Query
+                    </h2>
+                </div>
+                <div class="contact-form border-radius">
+                    <form [formGroup]="contactForm" (ngSubmit)="send()">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="mb-25">
+                                    <label class="form-label">
+                                        Your Name
+                                    </label>
+                                    <mat-form-field>
+                                        <mat-label>Enter your Name</mat-label>
+                                        <input matInput placeholder="Ex.Neha Patil "   formControlName="from_name">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="mb-25">
+                                    <label class="form-label">
+                                        Email
+                                    </label>
+                                    <mat-form-field>
+                                        <mat-label>Enter your Email</mat-label>
+                                        <input matInput placeholder="Ex. Jason Statham"     formControlName="from_email">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6 col-sm-6">
+                                <div class="mb-25">
+                                    <label class="form-label">
+                                        Your phone number
+                                    </label>
+                                    <mat-form-field>
+                                        <mat-label>Enter your phone number</mat-label>
+                                        <input matInput placeholder="Ex.+91-9970611896">
+                                    </mat-form-field>
+                                </div>
+                            </div> -->
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="mb-25">
+                                    <label class="form-label">
+Subject
+                                    </label>
+                                    <mat-form-field>
+                                        <mat-label>Enter your Subject</mat-label>
+                                        <input matInput placeholder="Ex. HiBootstrap"                formControlName="subject">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                         
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="mb-25">
+                                    <label class="form-label">
+                                        Describe message
+                                    </label>
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Leave a message</mat-label>
+                                        <textarea matInput placeholder="Ex. It makes me feel..."    formControlName="message"
+                                        ></textarea>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-12 col-sm-12">
+                                <div class="mb-25">
+                                    <div class="upload-btn position-relative">
+                                        <span class="d-inline-block position-relative">
+                                            <i class="ri-link"></i>
+                                            Attach file (Up to 10MB) <span>.pdf, .docx, .odt, .ods .txt (No file chosen)</span>
+                                        </span>
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-lg-12 col-sm-12">
+                                <button type="submit" mat-flat-button color="primary" class="default-btn"  [disabled]="!contactForm.valid">
+                                    SEND MESSAGE<i class="flaticon-right-arrow-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

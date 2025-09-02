@@ -1,0 +1,28 @@
+<div class="features-area customecolore">
+    <div class="container">
+        <div class="row justify-content-center py-5">
+            @for (content of featureBox; track content) {
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="feature-box bgcutome border-radius">
+                        <div class="icon">
+                            <i class="{{content.icon}}"></i>
+                        </div>
+                        <h3>
+                            {{content.title}}
+                        </h3>
+                        <p>
+                            {{content.desc}}
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="btn-box d-flex justify-content-center align-items-center pb-5">
+            <a routerLink="/services" mat-flat-button color="primary" class="default-btn customemar">
+               More Services! <i class="flaticon-right-arrow-2"></i>
+            </a>
+            <br>
+           
+        </div>
+    </div>
+</div>

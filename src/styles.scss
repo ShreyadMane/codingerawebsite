@@ -1,0 +1,577 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --fontFamily: 'Outfit', sans-serif;
+    --headingFontFamily: 'Space Grotesk', sans-serif;
+    --primaryColor: #7b13ff;
+    --whiteColor: #ffffff;
+    --blackColor: #040020;
+    --bodyColor: rgba(255, 255, 255, .65);
+    --transition: .5s;
+    --fontSize: 16px;
+}
+
+// _Variable
+@import "./variable";
+
+// _Utilities
+@import "./utilities";
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+    font: {
+        weight: 400;
+        size: var(--fontSize);
+        family: var(--fontFamily);
+    };
+}
+a {
+    transition: var(--transition);
+    color: var(--whiteColor);
+    text-decoration: none;
+    outline: 0 !important;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+.d-table {
+    width: 100%;
+    height: 100%;
+
+    &-cell {
+        vertical-align: middle;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    font-size: var(--fontSize);
+    color: var(--bodyColor);
+    line-height: 1.8;
+    margin: {
+        top: 0;
+        bottom: 15px;
+    };
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.ptb-150 {
+    padding: {
+        top: 150px;
+        bottom: 150px;
+    }
+}
+.pt-150 {
+    padding-top: 150px;
+}
+.pb-150 {
+    padding-bottom: 150px;
+}
+.ptb-125 {
+    padding: {
+        top: 125px;
+        bottom: 125px;
+    }
+}
+.pt-125 {
+    padding-top: 125px;
+}
+.pb-125 {
+    padding-bottom: 125px;
+}
+
+// Default Btn
+.default-btn {
+    &.mdc-button {
+        padding: 0;
+        z-index: 1;
+        height: auto;
+        min-width: auto;
+        overflow: hidden;
+        border-radius: 4px;
+        display: inline-block;
+        background: linear-gradient(93deg, #400d64 0%, #7b13ff 49.48%, #ff82f3 100%);
+
+        .mdc-button__label {
+            display: block;
+            border-radius: 4px;
+            padding: 18px 75px 18px 38px;
+            font: {
+                size: var(--fontSize);
+                weight: 500;
+            };
+            i {
+                top: 50%;
+                right: 38px;
+                font-size: 25px;
+                margin-top: 3px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+        }
+        &::before {
+            top: -5%;
+            left: -5%;
+            width: 0%;
+            content: "";
+            z-index: -1;
+            height: 110%;
+            overflow: hidden;
+            position: absolute;
+            border-radius: 4px;
+            visibility: hidden;
+            transform: skewX(15deg);
+            transition: var(--transition);
+            background: linear-gradient(93deg, #ff82f3 0%, #400d64 49.48%, #7b13ff 100%);
+        }
+        &:hover {
+            &::before {
+                visibility: visible;
+                width: 120%;
+                opacity: 1;
+            }
+        }
+        .mat-mdc-button-touch-target {
+            height: 100%;
+        }
+    }
+}
+
+// Link Btn
+.link-btn {
+    &.mdc-button {
+        padding: 0;
+        height: auto;
+        min-width: auto;
+        display: inline-block;
+
+        .mdc-button__label {
+            display: block;
+            color: #d2f4fd;
+            padding-right: 40px;
+            transition: var(--transition);
+            font: {
+                size: var(--fontSize);
+                weight: normal;
+            };
+            i {
+                top: 50%;
+                right: 0;
+                font-size: 25px;
+                margin-top: 4px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            &::before {
+                left: 0;
+                width: 0;
+                height: 1px;
+                content: '';
+                bottom: -2px;
+                position: absolute;
+                transition: var(--transition);
+                background-color: var(--whiteColor);
+            }
+            &:hover {
+                color: var(--whiteColor);
+        
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+        .mat-mdc-button-touch-target {
+            height: 100%;
+        }
+    }
+}
+
+// Section Title
+.section-title {
+    max-width: 815px;
+    margin-bottom: 55px;
+
+    .sub-title {
+        padding: 5px 15px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        color: var(--bodyColor);
+        background-color: rgba(255, 255, 255, .03);
+        border: 1px solid rgba(255, 255, 255, .09);
+
+        &.style-two {
+            color: var(--whiteColor);
+            border-color: var(--primaryColor);
+            background-color: var(--primaryColor);
+        }
+    }
+    h2 {
+        line-height: 1.2;
+        margin-bottom: 0;
+        font-size: 60px;
+
+        span {
+            color: #7b8f94;
+        }
+    }
+    &.mb-25 {
+        margin-bottom: 25px;
+    }
+}
+
+// Scroll To Top
+.scrolltop-button {
+    right: 40px !important;
+    bottom: 40px !important;
+    transition: var(--transition) !important;
+
+    &:hover {
+        background-color: var(--primaryColor) !important;
+    }
+}
+
+// Pagination CSS
+.pagination-area {
+    display: flex;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    .page-numbers {
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+        line-height: 38px;
+        color: var(--bodyColor);
+        transition: var(--transition);
+        border: 1px solid rgba(255, 255, 255, .09);
+        font: {
+            size: var(--fontSize);
+            weight: 700;
+        };
+        i {
+            font-size: 18px;
+        }
+        &.current, &:hover {
+            background-color: var(--primaryColor);
+            border-color: var(--primaryColor);
+            color: var(--whiteColor);
+        }
+        &.current {
+            pointer-events: none;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    body {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .ptb-150 {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+    }
+    .pt-150 {
+        padding-top: 60px;
+    }
+    .pb-150 {
+        padding-bottom: 60px;
+    }
+    .ptb-125 {
+        padding: {
+            top: 35px;
+            bottom: 35px;
+        }
+    }
+    .pt-125 {
+        padding-top: 35px;
+    }
+    .pb-125 {
+        padding-bottom: 35px;
+    }
+
+    // Default Btn
+    .default-btn {
+        &.mdc-button {
+            .mdc-button__label {
+                padding: 14px 55px 14px 25px;
+                font-size: 14px;
+        
+                i {
+                    right: 25px;
+                    font-size: 20px;
+                    margin-top: 2.7px;
+                }
+            }
+        }
+    }
+    
+    // Link Btn
+    .link-btn {
+        &.mdc-button {
+            .mdc-button__label {
+                padding-right: 28px;
+                font-size: 14px;
+                
+                i {
+                    right: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    // Section Title
+    .section-title {
+        max-width: 100%;
+        margin-bottom: 35px;
+    
+        .sub-title {
+            margin-bottom: 10px;
+        }
+        h2 {
+            line-height: 1.3;
+            font-size: 28px;
+        }
+    }
+
+    // Scroll To Top
+    .scrolltop-button {
+        right: 20px !important;
+        bottom: 20px !important;
+    }
+
+    // Pagination CSS
+    .pagination-area {
+        margin-top: 5px;
+        
+        .page-numbers {
+            width: 35px;
+            height: 35px;
+            margin: 0 3px;
+            font-size: 14px;
+            line-height: 34px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    body {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .ptb-150 {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        }
+    }
+    .pt-150 {
+        padding-top: 80px;
+    }
+    .pb-150 {
+        padding-bottom: 80px;
+    }
+    .ptb-125 {
+        padding: {
+            top: 55px;
+            bottom: 55px;
+        }
+    }
+    .pt-125 {
+        padding-top: 55px;
+    }
+    .pb-125 {
+        padding-bottom: 55px;
+    }
+
+    // Default Btn
+    .default-btn {
+        &.mdc-button {
+            .mdc-button__label {
+                font-size: 15px;
+                padding: 15.5px 62px 15.5px 30px;
+                
+                i {
+                    right: 30px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    
+    // Link Btn
+    .link-btn {
+        &.mdc-button {
+            .mdc-button__label {
+                padding-right: 32px;
+                font-size: 15px;
+        
+                i {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    // Section Title
+    .section-title {
+        max-width: 100%;
+        margin-bottom: 40px;
+    
+        .sub-title {
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 42px;
+        }
+    }
+
+    // Scroll To Top
+    .scrolltop-button {
+        right: 30px !important;
+        bottom: 30px !important;
+    }
+
+    // Pagination CSS
+    .pagination-area {
+        margin-top: 10px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .ptb-150 {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        }
+    }
+    .pt-150 {
+        padding-top: 100px;
+    }
+    .pb-150 {
+        padding-bottom: 100px;
+    }
+    .ptb-125 {
+        padding: {
+            top: 75px;
+            bottom: 75px;
+        }
+    }
+    .pt-125 {
+        padding-top: 75px;
+    }
+    .pb-125 {
+        padding-bottom: 75px;
+    }
+
+    // Default Btn
+    .default-btn {
+        &.mdc-button {
+            .mdc-button__label {
+                padding: 17px 72px 17px 35px;
+                
+                i {
+                    right: 35px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+    // Link Btn
+    .link-btn {
+        &.mdc-button {
+            .mdc-button__label {
+                padding-right: 38px;
+                
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    // Section Title
+    .section-title {
+        max-width: 720px;
+        margin-bottom: 45px;
+    
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+    // Pagination CSS
+    .pagination-area {
+        margin-top: 20px;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .ptb-150 {
+        padding: {
+            top: 125px;
+            bottom: 125px;
+        }
+    }
+    .pt-150 {
+        padding-top: 125px;
+    }
+    .pb-150 {
+        padding-bottom: 125px;
+    }
+    .ptb-125 {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        }
+    }
+    .pt-125 {
+        padding-top: 100px;
+    }
+    .pb-125 {
+        padding-bottom: 100px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

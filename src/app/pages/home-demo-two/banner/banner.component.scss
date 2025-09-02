@@ -1,0 +1,414 @@
+// Banner
+// .default-btn{
+//     margin-top: 100px !important;
+// }
+.banner-area {
+    padding: {
+        top: 210px;
+        // bottom: 150px;
+    };
+    
+    .animate-text {
+        display: inline-block;
+        font-size: 3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+    }
+    
+    .word {
+        display: inline-block;
+        opacity: 0;
+        transform: scale(0.8);
+        animation: fadeInScale 2s ease forwards;
+    }
+    
+    .word:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    .word:nth-child(2) {
+        animation-delay: 2s;
+    }
+    
+    .word:nth-child(3) {
+        animation-delay: 4s;
+    }
+    
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+.banner-content {
+    h1 {
+        line-height: 1.25;
+        margin-bottom: 25px;
+        letter-spacing: -2.6px;
+        font: {
+            size: 100px;
+            weight: bold;
+        };
+        span {
+            color: #a3e6fc;
+        }
+    }
+    
+    .btn-box {
+        margin:100px 0px;
+
+        .default-btn {
+            margin-right: 20px;
+        }
+        // .video-btn {
+        //     margin-left: 20px;
+        // }
+    }
+}
+// ::ng-deep {
+//     .banner-content {
+//         .btn-box {
+//             .video-btn {
+//                 &.mat-mdc-button {
+//                     padding: 0;
+//                     height: auto;
+//                     min-width: auto;
+//                     border-radius: 0;
+
+//                     .mdc-button__label {
+//                         display: flex;
+//                         align-items: center;
+//                         font: {
+//                             size: var(--fontSize);
+//                             weight: 500;
+//                         };
+//                         i {
+//                             width: 50px;
+//                             height: 50px;
+//                             border-radius: 50%;
+//                             margin-right: 15px;
+//                             position: relative;
+//                             display: inline-block;
+//                             background-color: var(--primaryColor);
+
+//                             &::before {
+//                                 left: 0;
+//                                 right: 0;
+//                                 top: 50%;
+//                                 font-size: 30px;
+//                                 margin-top: -1px;
+//                                 position: absolute;
+//                                 transform: translateY(-50%);
+//                             }
+//                         }
+//                     }
+//                     .mat-mdc-button-touch-target {
+//                         height: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// Video Popup
+// ::ng-deep {
+//     .video-popup {
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         opacity: 0;
+//         z-index: 999;
+//         position: fixed;
+//         transition: .3s;
+//         visibility: hidden;
+//         background-color: rgba(0, 0, 0, 0.5);
+//         overflow: {
+//             x: hidden;
+//             y: auto;
+//         };
+//         .popup-dialog {
+//             display: flex;
+//             transition: .3s;
+//             max-width: 800px;
+//             align-items: center;
+//             transform: translate(0, -20px);
+//             min-height: calc(100% - 1.75rem * 2);
+//             margin: {
+//                 left: auto;
+//                 right: auto;
+//             };
+//             .popup-inner {
+//                 width: 100%;
+//                 padding: 40px;
+
+//                 .popup-header {
+//                     margin-bottom: 35px;
+                    
+//                     h3 {
+//                         font-size: 20px;
+//                         color: var(--blackColor);
+//                     }
+//                     .mat-mdc-button {
+//                         padding: 0;
+//                         height: auto;
+//                         line-height: 1;
+//                         min-width: auto;
+//                         font-size: 22px;
+//                         --mdc-text-button-label-text-color: var(--blackColor);
+//                         --mat-text-button-state-layer-color: var(--blackColor);
+
+//                         .mat-mdc-button-touch-target {
+//                             height: 100%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         &.active {
+//             opacity: 1;
+//             visibility: visible;
+
+//             .popup-dialog {
+//                 transform: none;
+//             }
+//         }
+//     }
+// }
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Banner
+    .banner-area {
+        padding: {
+            top: 120px;
+            bottom: 60px;
+        };
+    }
+    .banner-content {
+        h1 {
+            letter-spacing: -.5px;
+            margin-bottom: 18px;
+            line-height: 1.2;
+            font-size: 38px;
+        }
+        .btn-box {
+            margin-top: 20px;
+
+            .default-btn {
+                margin-right: 10px;
+            }
+            // .video-btn {
+            //     margin-left: 10px;
+            // }
+        }
+    }
+    // ::ng-deep {
+    //     .banner-content {
+    //         .btn-box {
+    //             .video-btn {
+    //                 &.mat-mdc-button {
+    //                     .mdc-button__label {
+    //                         font-size: 0;
+
+    //                         i {
+    //                             width: 45px;
+    //                             height: 45px;
+    //                             margin-right: 0;
+
+    //                             &::before {
+    //                                 font-size: 25px;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // Video Popup
+    // ::ng-deep {
+    //     .video-popup {
+    //         .popup-dialog {
+    //             max-width: 540px;
+
+    //             .popup-inner {
+    //                 width: 100%;
+    //                 padding: 15px;
+
+    //                 .popup-header {
+    //                     margin-bottom: 15px;
+                        
+    //                     h3 {
+    //                         font-size: 18px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Banner
+    .banner-content {
+        .btn-box {
+            .default-btn {
+                margin-right: 15px;
+            }
+            // .video-btn {
+            //     margin-left: 15px;
+            // }
+        }
+    }
+
+    // Video Popup
+    // ::ng-deep {
+    //     .video-popup {
+    //         .popup-dialog {
+    //             .popup-inner {
+    //                 padding: 25px;
+
+    //                 .popup-header {
+    //                     margin-bottom: 25px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Banner
+    .banner-area {
+        padding: {
+            top: 150px;
+            bottom: 80px;
+        };
+    }
+    .banner-content {
+        h1 {
+            font-size: 60px;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+        .btn-box {
+            margin-top: 28px;
+
+            .default-btn {
+                margin-right: 12px;
+            }
+            // .video-btn {
+            //     margin-left: 12px;
+            // }
+        }
+    }
+    // ::ng-deep {
+    //     .banner-content {
+    //         .btn-box {
+    //             .video-btn {
+    //                 &.mat-mdc-button {
+    //                     .mdc-button__label {
+    //                         font-size: 15px;
+
+    //                         i {
+    //                             width: 48px;
+    //                             height: 48px;
+    //                             margin-right: 13px;
+
+    //                             &::before {
+    //                                 font-size: 28px;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // Video Popup
+    // ::ng-deep {
+    //     .video-popup {
+    //         .popup-dialog {
+    //             max-width: 720px;
+
+    //             .popup-inner {
+    //                 padding: 30px;
+    
+    //                 .popup-header {
+    //                     margin-bottom: 30px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Banner
+    .banner-area {
+        padding: {
+            top: 150px;
+            bottom: 100px;
+        };
+    }
+    .banner-content {
+        h1 {
+            letter-spacing: -1.5px;
+            margin-bottom: 25px;
+            font-size: 85px;
+        }
+        .btn-box {
+            margin-top: 35px;
+
+            .default-btn {
+                margin-right: 15px;
+            }
+            // .video-btn {
+            //     margin-left: 15px;
+            // }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Banner
+    .banner-area {
+        padding: {
+            top: 190px;
+            bottom: 125px;
+        };
+    }
+    .banner-content {
+        h1 {
+            letter-spacing: -2px;
+            font-size: 110px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

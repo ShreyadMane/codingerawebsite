@@ -1,0 +1,27 @@
+.agile-steps {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .step {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 150px;
+  }
+  .arrow {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .step h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .step p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+  }

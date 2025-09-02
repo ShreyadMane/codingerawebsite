@@ -1,0 +1,163 @@
+.page-banner-area {
+    padding-top: 265px;
+
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    ;
+
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        content: '';
+        position: absolute;
+
+        background: {
+            image: url(../../../../assets/images/bg-overlay/page-banner-overlay-top-20-percent.png);
+            position: bottom left;
+            repeat: no-repeat;
+            size: cover;
+        }
+
+        ;
+    }
+}
+
+.page-bannner-content {
+    ul {
+        padding: 5px 15px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .03);
+        border: 1px solid rgba(255, 255, 255, .09);
+
+        li {
+            color: var(--bodyColor);
+            font-size: 15px;
+
+            margin: {
+                left: 7px;
+                right: 7px;
+            }
+
+            ;
+
+            a {
+                color: var(--primaryColor);
+
+                &:hover {
+                    color: var(--whiteColor);
+                }
+            }
+
+            &::before {
+                top: 1px;
+                content: "/";
+                right: -9.9px;
+                position: absolute;
+                transform: rotate(3deg);
+                color: var(--bodyColor);
+
+                font: {
+                    size: 14px;
+                    weight: 300;
+                }
+
+                ;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .page-banner-area {
+        padding-top: 120px;
+    }
+
+    .page-bannner-content {
+        ul {
+            margin-bottom: 10px;
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .page-banner-area {
+        padding-top: 150px;
+    }
+
+    .page-bannner-content {
+        ul {
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .page-banner-area {
+        padding-top: 185px;
+    }
+
+    .page-bannner-content {
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .page-banner-area {
+        padding-top: 220px;
+    }
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

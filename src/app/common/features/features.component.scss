@@ -1,0 +1,113 @@
+.features-area {
+    background: radial-gradient(114.88% 50.27% at 2.73% 125%, rgba(123, 19, 255, 0.51) 0%, rgba(123, 19, 255, 0.04) 100%);
+    border: {
+        top: 1px solid rgba(255, 255, 255, .09);
+        bottom: 1px solid rgba(255, 255, 255, .09);
+    };
+    &.style-two {
+        background: unset !important;
+        border-width: 0;
+    }
+}
+.feature-box {
+    .icon {
+        line-height: 1;
+        font-size: 52px;
+        margin-bottom: 45px;
+        color: var(--primaryColor);
+    }
+    h3 {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+        max-width: 380px;
+    }
+}
+.features-image {
+    img {
+        margin-bottom: -4px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .feature-box {
+        .icon {
+            font-size: 40px;
+            margin-bottom: 11px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .feature-box {
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            margin-bottom: 11px;
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .feature-box {
+        .icon {
+            font-size: 50px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            margin-bottom: 12px;
+            font-size: 26px;
+        }
+        p {
+            font-size: 16px;
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .feature-box {
+        .icon {
+            margin-bottom: 35px;
+        }
+        p {
+            font-size: 17px;
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

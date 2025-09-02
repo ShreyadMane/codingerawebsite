@@ -1,0 +1,59 @@
+<div class="why-choose-area pb-150">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="why-choose-image position-relative z-1">
+                    <div class="funfacts">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="box">
+                                    <div class="number lh-1">
+                                        70%
+                                    </div>
+                                    <p>
+                                        Higher success rate
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="box">
+                                    <div class="number lh-1">
+                                        90%
+                                    </div>
+                                    <p>
+                                        Higher chance of delivery
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/images/why-choose-codingera.png" alt="why-choose-image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="why-choose-content">
+                    <span class="sub-title fw-medium d-inline-block">
+                        Why Choose Plaxa
+                    </span>
+                    <h2>
+                        <span>Our Company</span> one of one-kind software services
+                    </h2>
+                    <p>
+                        Our mission is to drive the business growth of our customers by offering innovative designs and
+                        exceptional application development services. We strive to deliver market-defining, high-quality
+                        solutions that not only create value but also provide a reliable competitive edge. By combining
+                        creativity with advanced technology, we aim to empower businesses globally, helping them achieve
+                        their goals and stay ahead in the competitive landscape. </p>
+                    <p *ngIf="router.url === '/about-us'">
+                        We resolve your business challenges and offer solutions considering your current state of things
+                        and plans. Our aim is not just to make a thing but to make data become.
+                    </p>
+                    <a routerLink="/about-us" mat-flat-button color="primary" class="default-btn"
+                        [ngClass]="{'d-none': router.url === '/about-us'}">
+                        More About Us <i class="flaticon-right-arrow-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

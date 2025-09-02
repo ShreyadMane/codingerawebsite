@@ -1,0 +1,245 @@
+<!-- Default -->
+<div class="testimonials-area pb-150" [ngClass]="{'d-none': router.url === '/index-3'}">
+    <div class="container-fluid">hone
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="testimonials-image position-relative text-center">
+                    <img src="	https://angular.hibootstrap.com/plaxa/assets/images/testimonials.png"
+                        alt="testimonials-image">
+                    <!-- <div class="total-reviews d-flex align-items-center">
+                        <div class="text">
+                            <span class="d-block">
+                                Review On
+                            </span>
+                            <img src="https://angular.hibootstrap.com/plaxa/assets/images/clutch.png" alt="clutch">
+                        </div>
+                        <div class="ratings">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span class="d-block">
+                                8654+ Reviews
+                            </span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="testimonials-content">
+                    <span class="sub-title fw-medium d-inline-block">
+                        Client's Testimonials
+                    </span>
+                    <h2>
+                        <span>Those Who</span> Trust Us to Take Their Solution
+                    </h2>
+                    <p>
+                        Trusted by over <span>15,000+</span> satisfied customers worldwide.
+                    </p>
+                </div>
+                <div class="testimonials-slides">
+                    <owl-carousel-o [options]="testimonialsSlides">
+                        <ng-template carouselSlide>
+                            <div class="testimonial-item border-radius">
+                                <p>
+                                    <q>
+                                        <span> CodingEra Software has been a reliable and innovative partner, delivering
+                                            high-quality digital solutions tailored to our needs. Their skilled team
+                                            demonstrates a strong understanding of relevant technologies and industry
+                                            trends, ensuring success from design to deployment.</span>
+                                    </q>
+                                </p>
+                                <div class="info d-lg-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <!-- <div class="user-image">
+                                            <img src="https://angular.hibootstrap.com/plaxa/assets/images/users/user1.png" alt="user-image">
+                                        </div> -->
+                                        <div class="user-info">
+                                            <h4>
+                                                Yatin Goal
+                                            </h4>
+                                            <span class="d-block">
+                                                25 days ago
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="company-logo">
+                                        <img src="https://angular.hibootstrap.com/plaxa/assets/images/rise.png"
+                                            alt="rise">
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="testimonial-item border-radius">
+                                <p>
+                                    <q>
+
+                                        CodingEra Software is a trusted partner, delivering tailored digital solutions
+                                        with expertise in the latest technologies and industry trends, ensuring seamless
+                                        execution from design to deployment. Their team consistently meets our business
+                                        needs with high-quality results. </q>
+                                </p>
+                                <div class="info d-lg-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <!-- <div class="user-image">
+                                            <img src="https://angular.hibootstrap.com/plaxa/assets/images/users/user2.png" alt="user-image">
+                                        </div> -->
+                                        <div class="user-info">
+                                            <h4>
+                                                Pal Sir
+                                            </h4>
+                                            <span class="d-block">
+                                                23 days ago
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="company-logo">
+                                        <img src="	https://angular.hibootstrap.com/plaxa/assets/images/penta.png"
+                                            alt="penta">
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="testimonial-item border-radius">
+                                <p>
+                                    <q>
+                                        CodingEra Software has been a reliable partner, offering customized digital
+                                        solutions that align with our business goals. Their team is skilled in the
+                                        latest technologies and industry trends, ensuring smooth delivery from design to
+                                        implementation. They consistently provide high-quality results that meet our
+                                        needs. </q>
+                                </p>
+                                <div class="info d-lg-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <!-- <div class="user-image">
+                                            <img src="https://angular.hibootstrap.com/plaxa/assets/images/users/user3.png" alt="user-image">
+                                        </div> -->
+                                        <div class="user-info">
+                                            <h4>
+                                                Jatin Goal
+                                            </h4>
+                                            <span class="d-block">
+                                                09 days ago
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="company-logo">
+                                        <img src="https://angular.hibootstrap.com/plaxa/assets/images/glossy.png"
+                                            alt="glossy">
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 3 -->
+<div class="testimonials-area bg-image ptb-150" *ngIf="router.url === '/index-3'">
+    <div class="container pb-150">
+        <div class="testimonials-slides-two">
+            <div class="quote-icon lh-1 ml-auto mr-auto">
+                <i class="flaticon-right-quote"></i>
+            </div>
+            <div class="section-title mb-25 ml-auto mr-auto">
+                <span class="sub-title text-white mb-0 fw-medium d-inline-block">
+                    Our Testimonials
+                </span>
+            </div>
+            <owl-carousel-o [options]="testimonialsSlidesTwo">
+                <ng-template carouselSlide>
+                    <div class="testimonial-box">
+                        <p>
+                            <q>
+                                <span> CodingEra Software has been a reliable and innovative partner for our development
+                                    needs. With a team of highly skilled professionals, they have consistently delivered
+                                    quality digital solutions tailored to our specific business requirements. From
+                                    design to deployment, CodingEra Software has demonstrated a deep understanding of
+                                    the technologies and industry trends that matter most to our business.</span>
+                            </q>
+                        </p>
+                        <div class="info d-md-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="user-image">
+                                    <img src="https://angular.hibootstrap.com/plaxa/assets/images/users/user1.png"
+                                        alt="user-image">
+                                </div>
+                                <div class="user-info">
+                                    <h4>
+                                        Yatin Goal
+                                    </h4>
+                                    <span class="d-block">
+                                        15 days ago
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="company-logo">
+                                <img src="https://angular.hibootstrap.com/plaxa/assets/images/rise.png" alt="rise">
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-box">
+                        <p>
+                            <q>
+                            </q>
+                        </p>
+                        <div class="info d-md-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="user-image">
+                                    <img src="https://angular.hibootstrap.com/plaxa/assets/images/users/user2.png"
+                                        alt="user-image">
+                                </div>
+                                <div class="user-info">
+                                    <h4>
+                                        Chetan Jogi
+                                    </h4>
+                                    <span class="d-block">
+                                        23 days ago
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="company-logo">
+                                <img src="	https://angular.hibootstrap.com/plaxa/assets/images/penta.png" alt="penta">
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-box">
+                        <p>
+                            <q>
+                            </q>
+                        </p>
+                        <div class="info d-md-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="user-image">
+                                    <img src="https://angular.hibootstrap.com/plaxa/assets/images/users/user3.png"
+                                        alt="user-image">
+                                </div>
+                                <div class="user-info">
+                                    <h4>
+                                        John Smith
+                                    </h4>
+                                    <span class="d-block">
+                                        09 days ago
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="company-logo">
+                                <img src="https://angular.hibootstrap.com/plaxa/assets/images/glossy.png" alt="glossy">
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

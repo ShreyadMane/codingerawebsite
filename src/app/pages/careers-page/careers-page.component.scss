@@ -1,0 +1,132 @@
+.job-item {
+    padding: 40px;
+    max-width: 875px;
+    border: 1px solid rgba(255, 255, 255, .09);
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: 17px;
+
+        a {
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+    ul {
+        li {
+            padding-left: 26px;
+            margin-right: 20px;
+            color: var(--bodyColor);
+
+            i {
+                transform: translateY(-50%);
+                color: var(--primaryColor);
+                position: absolute;
+                font-size: 18px;
+                top: 50%;
+                left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: -1;
+        content: '';
+        position: absolute;
+        visibility: hidden;
+        border-radius: 10px;
+        transition: var(--transition);
+        background: linear-gradient(238deg, #090129 77.16%, #7b13ff 158.68%);
+    }
+    &:hover {
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .job-item {
+        padding: 20px;
+        max-width: 100%;
+    
+        h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        ul {
+            li {
+                margin: {
+                    right: 15px;
+                    bottom: 15px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .job-item {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .job-item {
+        padding: 30px;
+        max-width: 100%;
+    
+        h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        ul {
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .job-item {
+        padding: 35px;
+        max-width: 800px;
+    
+        h3 {
+            font-size: 25px;
+        }
+        ul {
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,776 @@
+.service-details-description {
+    margin-bottom: 50px;
+    max-width: 1095px;
+
+    img {
+        margin-bottom: 30px;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 18px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+   
+}
+.service-details-features {
+    max-width: 1095px;
+    margin-bottom: 25px;
+    
+    .feature-box {
+        .icon {
+            line-height: 1;
+            font-size: 52px;
+            margin-bottom: 25px;
+            color: var(--primaryColor);
+        }
+        h3 {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+.mt-10 {
+    margin-top: 50px;
+}
+.service-details-content {
+    max-width: 1095px;
+    margin-bottom: 50px;
+
+    .content {
+        padding-right: 45px;
+
+        h3 {
+            margin-bottom: 18px;
+        }
+        p {
+            font-size: 18px;
+        }
+        ul {
+            margin-top: 30px;
+
+            li {
+                padding-left: 45px;
+                margin-bottom: 30px;
+
+                i {
+                    left: 0;
+                    top: 4px;
+                    font-size: 22px;
+                    position: absolute;
+                    color: var(--primaryColor);
+                }
+                h4 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 17px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .image {
+        img {
+            margin-bottom: -4px;
+        }
+    }
+}
+.service-details-benefits {
+    max-width: 1095px;
+    
+    .image {
+        margin-right: 65px;
+
+        img {
+            margin-bottom: -4px;
+        }
+    }
+    .content {
+        margin-left: -43px;
+
+        h3 {
+            margin-bottom: 30px;
+        }
+        ul {
+            li {
+                padding-left: 35px;
+                margin-bottom: 30px;
+
+                i {
+                    left: 0;
+                    top: 5px;
+                    font-size: 22px;
+                    color: #d2f4ff;
+                    position: absolute;
+                }
+                p {
+                    font-size: 18px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .service-details-description {
+        margin-bottom: 35px;
+        max-width: 100%;
+    
+        img {
+            margin-bottom: 15px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    .service-details-features {
+        max-width: 100%;
+        margin-bottom: 10px;
+        
+        .feature-box {
+            .icon {
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
+            h3 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .service-details-content {
+        max-width: 100%;
+        margin-bottom: 35px;
+    
+        .content {
+            padding-right: 0;
+    
+            h3 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+            }
+            ul {
+                margin-top: 20px;
+    
+                li {
+                    padding-left: 30px;
+                    margin-bottom: 20px;
+    
+                    i {
+                        top: 3px;
+                        font-size: 18px;
+                    }
+                    h4 {
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .image {
+            margin-top: 25px;
+        }
+    }
+    .service-details-benefits {
+        max-width: 100%;
+        
+        .image {
+            margin: {
+                right: 0;
+                bottom: 25px;
+            };
+        }
+        .content {
+            margin-left: 0;
+    
+            h3 {
+                margin-bottom: 15px;
+            }
+            ul {
+                li {
+                    padding-left: 25px;
+                    margin-bottom: 15px;
+    
+                    i {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .service-details-description {
+        margin-bottom: 40px;
+        max-width: 100%;
+    
+        img {
+            margin-bottom: 20px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 13px;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .service-details-features {
+        max-width: 1095px;
+        margin-bottom: 15px;
+        
+        .feature-box {
+            .icon {
+                font-size: 45px;
+                margin-bottom: 15px;
+            }
+            h3 {
+                margin-bottom: 13px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+    .service-details-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    
+        .content {
+            padding-right: 0;
+    
+            h3 {
+                margin-bottom: 13px;
+            }
+            p {
+                font-size: 15px;
+            }
+            ul {
+                margin-top: 20px;
+    
+                li {
+                    padding-left: 35px;
+                    margin-bottom: 20px;
+    
+                    i {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .image {
+            margin-top: 25px;
+        }
+    }
+    .service-details-benefits {
+        max-width: 100%;
+        
+        .image {
+            margin: {
+                right: 0;
+                bottom: 25px;
+            };
+        }
+        .content {
+            margin-left: 0;
+    
+            h3 {
+                margin-bottom: 20px;
+            }
+            ul {
+                max-width: 440px;
+
+                li {
+                    padding-left: 35px;
+                    margin-bottom: 20px;
+    
+                    i {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .service-details-description {
+        max-width: 100%;
+    
+        p {
+            font-size: 16px;
+        }
+    }
+    .service-details-features {
+        max-width: 100%;
+        
+        .feature-box {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .service-details-content {
+        max-width: 100%;
+    
+        .content {
+            padding-right: 0;
+    
+            p {
+                font-size: 16px;
+            }
+            ul {
+                margin-top: 25px;
+    
+                li {
+                    padding-left: 40px;
+                    margin-bottom: 25px;
+    
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .service-details-benefits {
+        max-width: 100%;
+        
+        .image {
+            margin-right: 45px;
+        }
+        .content {
+            margin-left: -45px;
+    
+            h3 {
+                margin-bottom: 25px;
+            }
+            ul {
+                li {
+                    padding-left: 30px;
+                    margin-bottom: 25px;
+    
+                    i {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .service-details-description {
+        max-width: 1000px;
+    
+        p {
+            font-size: 17px;
+        }
+    }
+    .service-details-features {
+        max-width: 1000px;
+        
+        .feature-box {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    .service-details-content {
+        max-width: 1000px;
+    
+        .content {
+            padding-right: 25px;
+    
+            p {
+                font-size: 17px;
+            }
+            ul {
+                li {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .service-details-benefits {
+        max-width: 1000px;
+        
+        .image {
+            margin-right: 50px;
+        }
+        .content {
+            margin-left: -50px;
+    
+            ul {
+                li {
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
+
+.case-study-item {
+    border: 1px solid rgba(123, 19, 255, .10);
+    padding: 80px 0 0 80px;
+
+    .content {
+        padding: {
+            right: 90px;
+            bottom: 80px;
+        };
+        .sub-title {
+            padding: 5px 15px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            color: var(--whiteColor);
+            background-color:  var(--primaryColor);
+            border: 1px solid  var(--primaryColor);
+        }
+        h2 {
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-size: 60px;
+    
+            a {
+                span {
+                    color: #705295;
+                    transition: var(--transition);
+                }
+                &:hover {
+                    color: var(--primaryColor);
+    
+                    span {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+        }
+        .funfacts {
+            border-top: 1px solid #e2e2e2;
+            padding-top: 35px;
+            margin-top: 33px;
+
+            .box {
+                h3 {
+                    background: linear-gradient(43deg, #400D64 5%, #7B13FF 10%, #FF82F3 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 6px;
+                    font-size: 28px;
+                }
+                span {
+                    font-size: 18px;
+                    color: #797979;
+                }
+            }
+        }
+    }
+    .btn-box {
+        text-align: right;
+        padding: {
+            right: 80px;
+            bottom: 60px;
+        };
+    }
+    .image {
+        margin-left: -41.5px;
+
+        .main-image {
+            border-radius: 10px 0 0 0;
+            margin: {
+                right: -1px;
+                bottom: -5px;
+            };
+        }
+        .logo {
+            left: 35px;
+            bottom: 35px;
+            position: absolute;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .case-study-item {
+        padding: 20px 15px;
+    
+        .content {
+            padding: {
+                right: 0;
+                bottom: 20px;
+            };
+            .sub-title {
+                margin-bottom: 10px;
+            }
+            h2 {
+                margin-bottom: 11px;
+                font-size: 28px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .funfacts {
+                padding-top: 15px;
+                margin-top: 15px;
+    
+                .box {
+                    h3 {
+                        margin-bottom: 5px;
+                        font-size: 20px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            text-align: left;
+            padding: {
+                right: 0;
+                bottom: 25px;
+            };
+        }
+        .image {
+            margin-left: 0;
+    
+            .main-image {
+                border-radius: 10px;
+                margin: {
+                    right: 0;
+                    bottom: -4px;
+                };
+            }
+            .logo {
+                left: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .case-study-item {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .case-study-item {
+        padding: 30px;
+    
+        .content {
+            padding: {
+                right: 0;
+                bottom: 25px;
+            };
+            .sub-title {
+                margin-bottom: 12px;
+            }
+            h2 {
+                margin-bottom: 15px;
+                font-size: 42px;
+            }
+            p {
+                font-size: 15px;
+            }
+            .funfacts {
+                padding-top: 22px;
+                margin-top: 22px;
+    
+                .box {
+                    h3 {
+                        font-size: 22px;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            text-align: left;
+            padding: {
+                right: 0;
+                bottom: 25px;
+            };
+        }
+        .image {
+            margin-left: 0;
+    
+            .main-image {
+                border-radius: 10px;
+                margin: {
+                    right: 0;
+                    bottom: -4px;
+                };
+            }
+            .logo {
+                left: 25px;
+                bottom: 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .case-study-item {
+        padding: 40px 0 0 40px;
+    
+        .content {
+            padding: {
+                right: 15px;
+                bottom: 40px;
+            };
+            h2 {
+                margin-bottom: 15px;
+                font-size: 50px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .funfacts {
+                padding-top: 25px;
+                margin-top: 25px;
+    
+                .box {
+                    h3 {
+                        font-size: 26px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            text-align: right;
+            padding: {
+                right: 40px;
+                bottom: 40px;
+            };
+        }
+        .image {
+            margin-left: -15px;
+    
+            .logo {
+                left: 30px;
+                bottom: 30px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .case-study-item {
+        padding: 60px 0 0 60px;
+    
+        .content {
+            padding: {
+                right: 0;
+                bottom: 60px;
+            };
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 17px;
+            }
+            .funfacts {
+                padding-top: 30px;
+                margin-top: 30px;
+            }
+        }
+        .btn-box {
+            padding: {
+                right: 60px;
+                bottom: 50px;
+            };
+        }
+        .image {
+            margin-left: 0;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

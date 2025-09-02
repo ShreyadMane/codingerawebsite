@@ -1,0 +1,127 @@
+<div
+    class="blog-area ptb-150"
+    style="background-image: url(assets/images/bg-overlay/bg-overlay3.jpg);"
+>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-md-12 order-2 order-xl-1">
+                <div class="blog-section-title">
+                    <span class="sub-title fw-medium d-inline-block">
+                        Our Insights
+                    </span>
+                    <h2>
+                        <span>See Latest</span> Updates, Blog, and News
+                    </h2>
+                    <p>
+                        Our mission is to deliver creative and innovative solutions that help businesses succeed in that fast-paced digital world. With over 10 years of experience, we have designed and developed award-winning platforms that have generated billions in revenue.
+                    </p>
+                    <a routerLink="/blog" mat-flat-button color="primary" class="default-btn">
+                        View All News <i class="flaticon-right-arrow-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-12 order-1 order-xl-2">
+                <div class="blog-slides">
+                    <owl-carousel-o [options]="blogSlides">
+                        <ng-template carouselSlide>
+                            <div class="single-blog-post border-radius">
+                                <a routerLink="/blog-details" class="image d-block">
+                                    <img src="assets/images/blogs/blog1.jpg" alt="blog-image">
+                                </a>
+                                <div class="content">
+                                    <ul class="meta pl-0 mt-0 list-unstyled">
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-message-2-line"></i>
+                                            <a routerLink="/blog-details">02 Comments</a>
+                                        </li>
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-user-3-line"></i>
+                                            <a routerLink="/blog">Admin</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="mb-0">
+                                        <a routerLink="/blog-details">
+                                            How to create a website with Artificial Intelingence
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="single-blog-post border-radius">
+                                <a routerLink="/blog-details" class="image d-block">
+                                    <img src="assets/images/blogs/blog2.jpg" alt="blog-image">
+                                </a>
+                                <div class="content">
+                                    <ul class="meta pl-0 mt-0 list-unstyled">
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-message-2-line"></i>
+                                            <a routerLink="/blog-details">09 Comments</a>
+                                        </li>
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-user-3-line"></i>
+                                            <a routerLink="/blog">Admin</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="mb-0">
+                                        <a routerLink="/blog-details">
+                                            Grow up your business for the next season in sights
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="single-blog-post border-radius">
+                                <a routerLink="/blog-details" class="image d-block">
+                                    <img src="assets/images/blogs/blog3.jpg" alt="blog-image">
+                                </a>
+                                <div class="content">
+                                    <ul class="meta pl-0 mt-0 list-unstyled">
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-message-2-line"></i>
+                                            <a routerLink="/blog-details">04 Comments</a>
+                                        </li>
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-user-3-line"></i>
+                                            <a routerLink="/blog">Admin</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="mb-0">
+                                        <a routerLink="/blog-details">
+                                            Super Bowl ad features a literally striking visual
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="single-blog-post border-radius">
+                                <a routerLink="/blog-details" class="image d-block">
+                                    <img src="assets/images/blogs/blog2.jpg" alt="blog-image">
+                                </a>
+                                <div class="content">
+                                    <ul class="meta pl-0 mt-0 list-unstyled">
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-message-2-line"></i>
+                                            <a routerLink="/blog-details">09 Comments</a>
+                                        </li>
+                                        <li class="d-inline-block position-relative">
+                                            <i class="ri-user-3-line"></i>
+                                            <a routerLink="/blog">Admin</a>
+                                        </li>
+                                    </ul>
+                                    <h3 class="mb-0">
+                                        <a routerLink="/blog-details">
+                                            Grow up your business for the next season in sights
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
