@@ -1,0 +1,4 @@
+1] git clone url
+2] git pull origin main
+3] create branch git ranch branch-name
+3] git checkout created-branch
