@@ -1,0 +1,600 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #101828;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: hsl(210, 14%, 95%);
+}
+
+
+/* Color highlights */
+.highlight-purple {
+    color: #9d8ee9; /* #9d8ee9 - pastel purple */
+}
+.highlight-cyan {
+    color: #00bbd7; /* cyan-ish blue */
+}
+.highlight-navy {
+    color: #00338d; /* navy blue */
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-btn, .register-btn {
+    background: linear-gradient(90deg, #00208b, #6c13b4);
+    color: white;
+}
+
+.reserve-btn:hover, .register-btn:hover {
+    background: linear-gradient(90deg, #001774, #007ebb);
+}
+
+.outline-btn {
+    background: transparent;
+    border: 2px solid #00208b;
+    color: #00208b;
+    margin-left: 12px;
+}
+
+.outline-btn:hover {
+    background: #00208b;
+    color: white;
+}
+
+/* Icons */
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+
+/* Specific SVG icons - using inline svg as backgrounds or Unicode emoji placeholder */
+
+/* Calendar icon */
+.calendar-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%230096d5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10h5v5H7z"/><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>');
+}
+
+/* Location icon */
+.location-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23A0AEC0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0a6 6 0 0 0-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 0 0-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>');
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #00208b, #6c13b4);
+    color: white;
+    padding: 3rem 5rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.hero-content h1 {
+    padding-top:70px;
+    font-size: 4rem;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    display: flex;
+    gap: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.hero-image img {
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+/* Why AI Section */
+.why-ai {
+    padding: 3rem 4rem;
+    text-align: center;
+    background: #f9fbff;
+}
+
+.why-ai h2 {
+  font-size: 4rem;
+  color: #0f172a;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    margin: 0 auto 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #506173;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    max-width: 220px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background-size: cover;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* Individual icons backgrounds for features */
+.brain-icon {
+    background: #00208b url('https://img.icons8.com/ios-filled/50/ffffff/brain.png') center center no-repeat;
+    background-size: 50%;
+}
+
+.automation-icon {
+    background: linear-gradient(135deg, #6b6bde, #00bbd7) url('https://img.icons8.com/ios-filled/50/ffffff/settings.png') center center no-repeat;
+    background-size: 50%;
+}
+
+.growth-icon {
+    background: linear-gradient(135deg, #9d8ee9, #00208b) url('https://img.icons8.com/ios-filled/50/ffffff/increase.png') center center no-repeat;
+    background-size: 50%;
+}
+
+.feature-item h3 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    font-size: 1.2rem;
+    color: #69707a;
+}
+
+/* Why Attend Section */
+.why-attend {
+    padding: 3rem 4rem;
+    text-align: center;
+    background: #f9fbff;
+}
+
+.why-attend h2 {
+  font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}
+
+.attendance-cards {
+    display: flex;
+    gap: 1.8rem;
+    margin-top: 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background: #f9fbff;
+    border-radius: 15px;
+    max-width: 260px;
+    box-shadow: 0 6px 18px rgb(12 13 95 / 7%);
+    padding: 2rem 1.5rem;
+    text-align: left;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Card icons */
+.ai-icon {
+    background: linear-gradient(135deg, #8959c1, #6b97d7)
+        url('https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png');
+}
+
+.network-icon {
+    background: #00208b url('https://img.icons8.com/ios-filled/50/ffffff/conference-call.png');
+}
+
+.automation-strategy-icon {
+    background: linear-gradient(135deg, #8259c0, #00bbd7)
+        url('https://img.icons8.com/ios-filled/50/ffffff/cogwheel.png');
+}
+
+.insights-icon {
+    background: #00208b url('https://img.icons8.com/ios-filled/50/ffffff/bulb.png');
+}
+
+.card h4 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #69707a;
+}
+
+/* Agenda Section */
+.agenda {
+    padding: 3rem 4rem;
+    text-align: center;
+    background: #f9fbff;
+}
+
+.agenda h2 {
+  font-size: 4rem;
+      line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}
+
+.agenda-items {
+    
+    margin: 2rem auto 0;
+}
+
+.agenda-item {
+    background: #f9fbff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgb(12 13 95 / 7%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.agenda-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1.25rem;
+}
+
+.coffee-icon {
+    background: linear-gradient(135deg, #00bbd7, #6b6bde)
+        url('https://img.icons8.com/ios-filled/50/ffffff/coffee-to-go.png');
+}
+
+.mic-icon {
+    background: #00208b url('https://img.icons8.com/ios-filled/50/ffffff/microphone.png');
+}
+
+.agenda-info {
+    flex: 1;
+    text-align: left;
+}
+
+.agenda-info h4 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.agenda-info p {
+    font-size: 1.2rem;
+    color: #69707a;
+}
+
+.agenda-time {
+    color: #9d8ee9;
+    font-weight: 600;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+/* Join Us Section */
+.join-us {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem 4rem;
+    background: #f9fbff;
+}
+
+.join-info {
+    max-width: 520px;
+}
+
+.join-info h2 {
+  font-size: 4rem;
+      font-weight: 800;
+    margin-bottom: 2rem;
+    color: #0f172a;
+}
+
+.join-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.point-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.point-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.facility-icon {
+    background: #00208b url('https://img.icons8.com/ios-filled/50/ffffff/building.png');
+}
+
+.location-icon-2 {
+    background: linear-gradient(135deg,#6b6bde,#00bbd7) url('https://img.icons8.com/ios-filled/50/ffffff/marker.png');
+}
+
+.access-icon {
+    background: linear-gradient(135deg,#9d8ee9,#6b97d7) url('https://img.icons8.com/ios-filled/50/ffffff/paper-plane.png');
+}
+
+.point-item h4 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+
+.point-item p {
+    font-size: 1.2rem;
+    color: #69707a;
+}
+
+.address {
+    background: #f9fbff;
+    border-radius: 15px;
+    padding: 1rem 1.25rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    box-shadow: 0 6px 18px rgb(12 13 95 / 7%);
+    line-height: 1.4;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+/* Map */
+.map {
+    flex: 1;
+    background: #f9fbff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgb(12 13 95 / 7%);
+    padding: 3rem;
+    text-align: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map-icon {
+    width: 72px;
+    height: 72px;
+    background: #00208b url('https://img.icons8.com/ios-filled/80/ffffff/marker.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto 1rem;
+    border-radius: 15px;
+}
+
+.map h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.map p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #69707a;
+}
+
+/* Final Call Section */
+.final-call {
+    background: linear-gradient(90deg, #00208b, #6c13b4);
+    color: white;
+    text-align: center;
+    padding: 3rem 4rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.final-call h2 {
+  font-size: 4rem;
+      line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.final-text {
+    line-height: 1.6;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.stat-item h3 {
+    font-size: 3.8rem;
+    color: #7f8acb;
+    font-weight: 700;
+}
+
+.stat-item p {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.actions {
+    margin-bottom: 2rem;
+}
+
+.actions .btn {
+    font-size: 1.2rem;
+}
+
+.early-bird {
+    margin: 0 auto;
+    background: rgba(255 255 255 / 0.15);
+    border-radius: 15px;
+    max-width: 420px;
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.early-bird .icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23b3c0e8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10h5v5H7z"/><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>');
+    background-size: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 2rem 4rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .details {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attendance-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-us {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .actions .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .actions .outline-btn {
+        margin-left: 0;
+    }
+}

@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+
+export class AppModule { }
 import { NotFoundComponent } from './common/not-found/not-found.component';
 import { HomeDemoTwoComponent } from './pages/home-demo-two/home-demo-two.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
@@ -16,8 +18,7 @@ import { ServiceDetailsSocialComponent } from './pages/service-details-page/serv
 import { ServiceDetailsIntershipComponent } from './pages/service-details-page/service-details-intership/service-details-intership.component';
 import { ServiceDetailsSoftwareComponent } from './pages/service-details-page/service-details-software/service-details-software.component';
 import { ServiceDetailsOutsourceComponent } from './pages/service-details-page/service-details-outsource/service-details-outsource.component';
-
-
+import{ ConferenceComponent } from './common/conference/conference.component';
 export const routes: Routes = [
     { path: '', component: HomeDemoTwoComponent },
     { path: 'index-2', component: HomeDemoTwoComponent },
@@ -37,5 +38,9 @@ export const routes: Routes = [
     { path: 'intership', component: ServiceDetailsIntershipComponent },
     { path: 'contact-us', component: ContactUsPageComponent },
     { path: 'outsource', component: ServiceDetailsOutsourceComponent },
+   { 
+  path: 'conference', component:ConferenceComponent
+},
+    
     { path: '**', component: NotFoundComponent }
 ];
